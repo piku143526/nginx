@@ -3,9 +3,6 @@ sudo yum update -y
 sudo mkdir -p  /var/www/vhosts/frontend
 sudo chown ec2-user:ec2-user -R /var/www/vhosts/frontend/
 cd /var/www/vhosts/frontend/
-sudo amazon-linux-extras enable php7.4
-sudo  yum install php-cli php-pdo php-fpm php-json php-mysqlnd php-xml php-mbstring git telnet -y
-sudo chkconfig php-fpm on
 sudo amazon-linux-extras install nginx1 -y
 sudo service nginx start
 cd /etc/nginx/conf.d/
