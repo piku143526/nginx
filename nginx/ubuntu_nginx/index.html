@@ -3,9 +3,42 @@
 <head>
     <title>Welcome to Antier Solutions</title>
     <style>
-        /* CSS for increasing font size */
+        /* CSS for increasing font size and centering */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff33e1, #33e1ff);
+            background-size: 400% 400%;
+            animation: backgroundChange 10s infinite;
+        }
+
         h1 {
-            font-size: 24px; /* Adjust the size as needed */
+            font-size: 88px; /* Increase the font size to 48 pixels */
+            position: absolute;
+            animation: moveText 10s linear infinite; /* Apply text animation */
+        }
+
+        /* CSS for background color animation */
+        @keyframes backgroundChange {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* CSS for text animation */
+        @keyframes moveText {
+            0% {
+                left: -100%; /* Start from the left side of the viewport */
+            }
+            100% {
+                left: 100%; /* Move to the right side of the viewport */
+            }
         }
     </style>
 </head>
