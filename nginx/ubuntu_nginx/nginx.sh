@@ -12,7 +12,7 @@ sudo wget  https://github.com/piku143526/nginx/raw/main/nginx/ubuntu_nginx/api.c
 sudo wget  https://github.com/piku143526/nginx/raw/main/nginx/ubuntu_nginx/app.conf
 sudo chmod 755 /etc/nginx/conf.d/
 cd /var/www/vhosts/frontend/
-sudo wget https://github.com/piku143526/nginx/raw/main/index.html
+sudo wget https://github.com/piku143526/nginx/raw/main/nginx/ubuntu_nginx/index.html
 sudo ssystemctl restart nginx
 sudo systemctl enable nginx
 sudo systemctl status nginx
